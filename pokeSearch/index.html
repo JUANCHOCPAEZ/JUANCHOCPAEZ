@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>PokeSearch</title>
+    <meta name="viewport" content=" user-scalable=no">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="abilities.js">
+    </script>
+    <script type="text/javascript" src="sprites.js">
+    </script>
+    <script type="text/javascript" src="moves.js">
+    </script>
+    <script type="text/javascript" src="random.js">
+    </script>
+
+</head>
+
+<header>
+    <div class="banner ">
+        <div class="topnav-left">
+            <img src="Pokebola.png" class="logo">
+        </div>
+        <div class="row">
+            <h1 class="title"><a>PokeSearch </a> </h1>
+            <h6 class="col-sm-3 contactame" id="nav" href="#contactame "><a href="#contacto">Contacto</a></h6>
+        </div>
+    </div>
+</header>
+
+<body class="body ">
+    <div class="container instruccion border mt-4">
+        <h1 Class="comobus ">Como Buscar?</h1>
+        </br>
+        <h4 class="instletra">Si quieres encontrar algun pokemon, solo debes escribir su nombre o poner su numero de
+            pokedex
+            y el sistema arrojara la busqueda.</br></br>
+            Si quieres ver cualquier Pokemon, puedes dar click en "un Pokemon al azar"
+        </h4>
+        </br>
+        <h5 class="noOlvides">
+            No olvides pasar el mouse por el pokemon, para ver su forma Shiny, ya sea Masculino o femenino.</br>
+            
+        </h5>
+    </div>
+    <form id="form">
+        <div class=" container mt-4 ">
+            <div class="row contBuscador">
+                <div class="col-sm-5 buscador">
+                    <input class="buscaInput" type="text" id="search" placeholder="Busca tu Pokemon" required>
+                </div>
+                <div class="col-sm-2 contRandom ">
+                    <button type="button" class="mt-4 botonSearch" id="botonSearch">Busca</button>
+                </div>
+                <div class="col-sm-4 contRandom ">
+                    <button type="button" class="mt-4 botonRandom" onclick="random()" id="botonRandom">Un Pokemon al
+                        Azar</button>
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <div class="contCards container mt-4">
+        <div class="row">
+            <div class=" cards col-sm-3">
+                <div class="flip-card ">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="image">
+                            <h2 id="numberIzq" class="numero"></h2>
+                            <img id="imagenIzq" alt="imagen" class="imagen" src="Pokebola.png">
+                            <h3 id="nombreIzq" alt="nombre" class="nombre"></h3>
+                            <h6 id="male" class="numero">male</h6>
+
+                        </div>
+                        <div class="flip-card-back">
+                            <h2 id="numberBackIzq" class="numero"></h2>
+                            <img id="imagenBackIzq" alt="imagen" class="imagen" src="Pokebola.png">
+                            <h3 id="nombreBackIzq" alt="nombre" class="nombre"></h3>
+                            <h6 id="male" class="numero">male</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--center-->
+            <div class=" cards col-sm-6">
+                <div id="contenedorDatos" class="contenedorDatos">
+                    <div id="ContBasicos" class="ContBasicos">
+                        <h6 class="type" id="types">tipo:</h6>
+
+                    </div>
+                    <div id="ContMoves" class="contMoves">
+                        <h4>Attacks</h4>
+                        <h6 class="moves" id="moves"></br></h6>
+                    </div>
+                    <div id="contDimensiones" class="contDimensiones">
+                        <h6 class="dimensions" id="dimensions"></h6>
+                        <h6 class="peso" id="peso"></h6>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--der-->
+            <div class=" cards col-sm-3">
+                <div class="flip-card ">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="image">
+                            <h2 id="numberDer" class="numero"></h2>
+                            <img id="imagenDer" alt="imagen" class="imagen" onerror="this.src='Oops.png'"
+                                src="Pokebola.png">
+                            <h3 id="nombreDer" alt="nombre" class="nombre"></h3>
+                            <h6 id="male" class="numero">female</h6>
+
+                        </div>
+                        <div class="flip-card-back">
+                            <h2 id="numberBackDer" class="numero"></h2>
+                            <img id="imagenBackDer" alt="imagen" class="imagen" onerror="this.src='Oops.png'"
+                                src="Pokebola.png">
+                            <h3 id="nombreBackDer" alt="nombre" class="nombre"></h3>
+                            <h6 id="male" class="numero">female</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="contactText mt-4" id="contacto">
+        <div class="row">
+            <p class="col-sm-12 ">Pagina Web creada netamente con fines educativos y profesionales - sin animo de lucro </p>
+            <p class="col-sm-12 ">Desarrollado por: Juan Carlos Páez Gómez  - Ingeniero de Sistemas - juanpaez.26@hotmail.com - (+57)3102190960</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!--
+        <script type="text/javascript" src="sprites.js">
+    </script>
+    <script type="text/javascript" src="abilities.js">
+    </script>
+    <script type="text/javascript" src="moves.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+-->

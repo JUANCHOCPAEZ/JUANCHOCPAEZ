@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+
+<head>
+    <title>Radio</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="text/javascript" src="app.js" defer></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+<header>
+
+    <div class="header ">
+        <div class="float-right">
+            <li class="itemNav ">
+                <a class="nav" href=#spotify><img src="Images/Envivo.png" class="imgEnVivo"></a>
+            </li>
+            <li class="itemNav"><a class="nav" href=#home>Inicio</a></li>
+            <li class="itemNav"><a class="nav" href=#spotify>Spotify</a></li>
+            <li class="itemNav"><a class="nav active" href=#footer>Contacto</a></li>
+        </div>
+        <div class=" float-left">
+            <li>
+                <a class="nav logo" href=#home><img src="Images/radioLogo.png" id="logo">   Rockstalgia</a>
+            </li>
+        </div>
+    </div>
+
+</header>
+
+<body>
+
+    <div class="banner ">
+        <img src="Images/Radio.jpg " id="home" class=" responsive " width="1340px ">
+        <div class="image-text">
+            <div class="letra1 "> Rockstalgia
+            </div>
+        </div>
+        <div class="image-text2">
+            <div class="letra2">
+                Emisora Online con lo mejor del Rock n' Roll y sus subgeneros resaltando sus diferentes decadas, modas y estilos.
+            </div>
+        </div>
+        <div class="columnas">
+            <div class="a">
+
+
+
+
+                <div class="volume">
+
+                    <input type="range" class="volumeBar" name="volumen" id="volumen" min="0" max="1" step="0.01">
+                    <div class="fas fa-volume-up volume-icon"> </div>
+                    <!-- <div class="fas fa-volume-down volume-icon"> </div>-->
+
+                </div>
+                <div id="controles">
+
+                    <div>
+
+                        <div class=" fa fa-fast-backward backfordward" onclick="prevMusic()"> </div>
+
+                        <i class="fas fa-play-circle play" onclick="togglePlay()" id="play"></i>
+                        <i class="fa fa-fast-forward fordward " onclick="nextMusic()"></i>
+
+                    </div>
+                    <div>
+                        <span id="currentPlay" class="nombreCancion"></span></br>
+                        <progress id="progress" class="progress" value="0" max="100"></progress>
+                    </div>
+                    <div class="timer" id="timer">
+                    </div>
+
+                    </br>
+                    <div class="tableTile">Canciones</div>
+                    <table>
+                        <thead class="table" id="tabla">
+                            <tr>
+
+
+
+
+
+                            </tr>
+                        </thead>
+                        <tbody class="table" id="cuerpoTabla"></tbody>
+                    </table>
+                    <ul class="listGroup" id="playlist"></ul>
+                    <div></div>
+
+
+
+                    <audio id="player" class="player" controls="controls" type="audio/mpeg" ontimeupdate="updateProgress()">
+                    <source id="source" src="music/acab.mp3"></audio>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="b">
+                <iframe id="spotify" src="https://open.spotify.com/embed?uri=spotify:playlist:6vnvOgZTnzrSc05WTIAnPt" width="400" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" class="spotify"></iframe> !-->
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div id="footer" class="footer">
+            <p>© 2020- Juan Carlos Páez Gómez - @juanchocpaez      Pagina Web netamente sin animo de lucro, creada con fines educativos. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

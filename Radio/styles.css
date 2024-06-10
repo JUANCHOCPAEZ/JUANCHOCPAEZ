@@ -1,0 +1,212 @@
+        .itemNav {
+            float: right;
+            border-right: 1px solid rgb(199, 231, 19);
+        }
+        
+        .header {
+            background-color: rgb(20, 10, 10);
+            position: fixed;
+            width: 100%;
+            top: -15px;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .nav {
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: rgb(247, 238, 228);
+        }
+        
+        .logo {
+            color: #f5ad42;
+            font-size: 2vw;
+        }
+        
+        .active {
+            background-color: #f5ad42;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: rgb(184, 141, 98);
+        }
+        
+        .imgEnVivo {
+            width: 25px;
+            height: 15px;
+        }
+        
+        .banner {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .float-left {
+            float: left;
+        }
+        
+        .float-right {
+            float: right
+        }
+        
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+        
+        .letra1 {
+            font-style: italic;
+            font-size: 6vw;
+            color: #f5ad42;
+            font-weight: 700;
+        }
+        
+        .image-text {
+            position: absolute;
+            top: 140px;
+            left: 36%;
+        }
+        
+        .letra2 {
+            font-style: italic;
+            font-size: 3vw;
+            color: #c9a743;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .image-text2 {
+            width: 720px;
+            position: absolute;
+            top: 270px;
+            margin: auto;
+            left: 26%;
+        }
+        
+        .columnas {
+            padding: 15px;
+            position: absolute;
+            top: 500px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            float: left;
+            border-color: #c9a743;
+        }
+        
+        .a {
+            flex: 1;
+            width: 50%;
+            border-color: rebeccapurple;
+        }
+        
+        .b {
+            flex: 1;
+            width: 50%;
+        }
+        
+        body {
+            background-color: black;
+        }
+        
+        .volume {
+            margin-top: 20px;
+            text-align: left;
+            color: #f5ad42;
+        }
+        
+        .volumeBar {
+            width: 100px;
+            margin-left: 30px;
+            transform-origin: 75px 75px;
+            transform: rotate(-90deg);
+            position: absolute;
+        }
+        
+        .volume-icon {
+            font-size: 18px;
+            color: #f5ad42;
+            float: left;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        
+        .play {
+            font-size: 120px;
+            margin: center;
+            color: #f5ad42;
+        }
+        
+        .backfordward {
+            font-size: 90px;
+            padding: 20px;
+            margin-left: -100px;
+            color: #f5ad42;
+            text-align: left;
+        }
+        
+        .fordward {
+            font-size: 90px;
+            padding: 20px;
+            color: #f5ad42;
+        }
+        
+        .progress {
+            width: 400px;
+            color: aquamarine;
+        }
+        
+        .tableTile {
+            color: #f5ad42;
+            text-align: center;
+            font-size: 55px;
+            font-weight: 900;
+        }
+        
+        td {
+            font-size: 28px;
+            text-align: left;
+            padding-left: 80px;
+            color: #f5ad42;
+            padding-top: 25px;
+        }
+        
+        td:hover:not(.active) {
+            color: rgb(192, 194, 59);
+            cursor: pointer;
+        }
+        
+        #playList {
+            background: white;
+            border-radius: 10px;
+            text-align: left;
+            opacity: 0.8;
+            color: #e84393;
+        }
+        
+        .spotify {
+            padding: 120px;
+        }
+        
+        .player {
+            visibility: hidden;
+        }
+        
+        .nombreCancion {
+            color: #f5ad42;
+            text-align: left;
+            font-size: 18px;
+        }
+        
+        .timer {
+            color: #f5ad42;
+            visibility: visible;
+        }
+        
+        .footer {
+            color: #f5ad42;
+            display: block;
+            margin-top: 290px;
+        }

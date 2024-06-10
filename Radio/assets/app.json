@@ -1,0 +1,38 @@
+[{
+        "id": 0,
+        "nombre": "Hurt",
+        "artist": "Johnny Cash",
+        "song": "music/Johnny Cash - Hurt .mp3",
+        "image": "radio/hurt.jpg"
+    },
+
+    {
+        "id": "1",
+        "nombre": "Kashmir",
+        "artist": "Led Zepellin",
+        "song": "music/Kashmir - Led Zeppelin.mp3",
+        "image": "radio/kashmir.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Hurt",
+        "artist": "Johnny Cash",
+        "song": "music/Johnny Cash - Hurt .mp3",
+        "image": "radio/hurt.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Hurt",
+        "artist": "Johnny Cash",
+        "song": "music/Johnny Cash - Hurt .mp3",
+        "image": "radio/hurt.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Hurt",
+        "artist": "Johnny Cash",
+        "song": "music/Johnny Cash - Hurt .mp3",
+        "image": "radio/hurt.jpg"
+    }
+
+]

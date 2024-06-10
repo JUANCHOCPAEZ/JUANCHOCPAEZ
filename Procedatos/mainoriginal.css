@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	height: 400px;
+	background-color: #D1CACA;
+
+
+}
+.container-fluid {
+	position: relative;
+	height: 80px;
+	background-color: #D1CACA;
+
+}
+
+.logo {
+	position: fixed;
+	top: 25px;
+	left: 35px;
+	font-size: 35px;
+}
+
+.nombreEmpresa {
+	position: absolute;
+	top: 25px;
+	left:100px;
+}
+.center {
+	position: absolute;
+	right:  40px;
+	top: 30px;
+	width: 100%;
+
+}
+.grid{
+
+	background-color:powderblue; 
+}
+/*responsividad de las imagenes*/
+.carousel-inner img {
+      width: 100%;
+      opacity: 70%;
+      
+  }
+.texto1{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    font-size: 45px;
+    color: #0C1952;
+}
+.texto2{
+    position: absolute;
+    top:40%;
+    left: 25%;
+    font-size: 30px;
+    color: #0E2071;
+    width: 680px;
+
+}
+.rounded-circle{
+ border: silver 10px solid
+
+}
+
+.textoservicios{
+ position: relative;
+    top: 115%;
+    left: 40%;
+    font-size: 45px;
+    color: #0C1952;
+
+}
+
+.col-sm-5{
+	top: 115%;
+    left: 23%;
+    font-size: 45px;
+    color: #0C1952;
+	
+}
+.textoclientes{
+ position: relative;
+    top: 135%;
+    left: 23%;
+    font-size: 45px;
+    color: #0C1952;height: 100px;
+}
+.col-sm-3-sol{
+	top: 200%;
+    left: 20%;
+    font-size: 45px;
+    color: #0C1952;
+	 position: relative;
+	 height: 100px;
+	 width: 100px;
+}
+.col-sm-3-ramo{
+	
+    left: 300%;
+    font-size: 45px;
+    color: #0C1952;
+	 position: relative;
+	 height: 100px;
+	 width: 100px;
+}
+.col-sm-3-telaro{
+
+    left: 300%;
+    font-size: 45px;
+    color: #0C1952;
+	 position: relative;
+	 height: 100px;
+	 width: 100px;
+
+
+}

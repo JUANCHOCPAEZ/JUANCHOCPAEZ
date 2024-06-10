@@ -1,0 +1,218 @@
+.banner {
+    background-color: rgb(241, 76, 76);
+    position: relative;
+    width: 99%;
+    top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 100%;
+    overflow: hidden;
+    z-index: 1;
+    height: 5vw;
+}
+
+
+.topnav-left {
+    float: left;
+    animation-delay: -100ms;
+    animation: mymovename 3s;
+    display: block;
+    font-size: 1.7vw;
+}
+
+.logo{
+height: 3vw;
+width:  3vw;
+margin-top: 0.6vw;
+margin-left: 1vw;
+
+}
+.title{
+width: 22vw;
+height: 1vw;
+}
+.topnav-right {
+    float: right;
+    display: block;
+    animation: mymove 3s;
+    animation-delay: -500ms;
+    position: absolute;
+    margin-right:2vw ;
+}
+.contactame{
+  margin-left: 48vw;
+  text-align: end;
+  margin-top: 2vw;
+}
+
+.body{
+    background-color: rgb(210, 175, 255);
+    height: 100%;
+}
+.instruccion{
+    background-color: rgb(121, 123, 235);
+    position: relative;
+    padding: 2vw;
+}
+.contBuscador{
+    background-color: black;
+position: relative;
+height: 7vw;
+padding-left: 8vw;
+
+
+}
+.buscador{
+    padding-block: 2vw;
+    padding-left: 2vw;
+    position: relative;
+}
+.buscaInput{
+    width: 25vw;
+}
+.contRandom{
+    position: relative;
+}
+.botonSearch{
+    position: relative;
+}
+.contCards{
+    position: relative;
+
+}
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 25vw;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #acabab;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #acabab;
+    color: black;
+    transform: rotateY(180deg);
+  }
+
+  .imagen{
+    height: 50%;
+    width: 85%;
+  
+  }
+
+  .nombre{
+    height: 3vw;
+    width: 85%;
+    position: relative;
+  }
+
+  .numero{
+    height:3vw;
+    width: 85%;
+position: relative;  
+}
+
+.peso{ height: 1vw;
+  
+
+}
+
+.dimensions{
+  height: 1vw;
+  margin-top: 1vw;
+}
+
+.moves{
+height: 8vw;
+
+}
+.contenedorDatos{
+  /*background-color: #bbb;*/
+    width: 100%;
+    height: 25vw;
+    text-align: center;
+    justify-content: center;
+    
+}
+.ContBasicos{
+  width: 80%;
+    height: 20%;
+    border-style: solid;
+    border-width: 0.2vw;
+    margin: 0 auto;
+    display: grid;
+    box-sizing: border-box;
+}
+
+.contMoves{
+  width: 80%;
+    height: 50%;
+    border-style: solid;
+    border-width: 0.2vw;
+    margin: 0 auto;
+    display: grid;
+      box-sizing: border-box;
+}
+
+.contDimensiones{
+  width: 80%;
+    height: 30%;
+    border-style: solid;
+    border-width: 0.2vw;
+    margin: 0 auto;
+    display: grid;
+    box-sizing: border-box;
+}
+/*hover*/
+.contenedorDatos::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.contenedorDatos:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.contenedorDatos::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 24vw 0 24vw;
+  background:   rgb(121, 123, 235);
+  z-index: -1;
+  transition: transform .5s ease;
+}
+
+.contactText{
+background-color:  rgb(241, 76, 76);
+font-style: italic;
+font-weight: 500;
+text-align: center;
+}

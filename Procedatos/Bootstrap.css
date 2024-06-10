@@ -1,0 +1,14 @@
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 10%;
+}
+
+.carousel-indicators li {
+    opacity: 10%;
+}
+
+.carousel-indicators .active {
+    opacity: 15%;
+}
+
+
